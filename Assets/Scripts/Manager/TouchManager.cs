@@ -8,6 +8,8 @@ public class TouchManager : MonoBehaviour {
 	{
 		if (Input.GetMouseButtonDown (0)) 
 		{
+			SharedData.clickCnt ++;
+			Messenger.Broadcast (GameEvent.UI_ClickCnt);
 			Messenger.Broadcast (GameEvent.Msg_Click);
 		}
 	}

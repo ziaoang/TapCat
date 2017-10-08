@@ -6,6 +6,7 @@
 
 	// UI related
 	public static ushort UI_Vitality = 0x0100;
+	public static ushort UI_ClickCnt = 0x0101;
 }
 
 
